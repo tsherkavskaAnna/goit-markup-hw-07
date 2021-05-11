@@ -1,0 +1,31 @@
+/*Контакты хедер*/
+.list-contacts {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-left: auto;
+}
+.link__contact {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: $mainTextColorcolor;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color $timeDuration $timingFunction;
+  &:hover,
+  &:focus {
+    color: $accentCcolor;
+  }
+}
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav__icons {
+  margin-right: 10px;
+  fill: currentColor;
+}

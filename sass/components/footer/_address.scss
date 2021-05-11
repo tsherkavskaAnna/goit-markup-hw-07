@@ -1,0 +1,36 @@
+.contacts-section {
+  display: flex;
+  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.address {
+  margin-right: 70px;
+}
+
+.address__contact {
+  font-style: inherit;
+  margin-top: 20px;
+}
+.address__link {
+  text-decoration: none;
+  font-size: 14px;
+  color: $titleColor;
+  cursor: pointer;
+  transition: color $timeDuration $timingFunction;
+  &:hover,
+  &:focus {
+    color: $accentCcolor;
+  }
+}
+.contacts__link {
+  margin-top: 9px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color $timeDuration $timingFunction;
+  &:hover,
+  &:focus {
+    color: $accentCcolor;
+  }
+}

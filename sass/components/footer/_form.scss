@@ -1,0 +1,47 @@
+.form {
+  display: flex;
+}
+.form__field input {
+  display: block;
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+  margin-right: 12px;
+  background: $heroFooterColor;
+  color: $titleColor;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition: border color $timeDuration $timingFunction;
+}
+.form__field input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+.form__field input:focus {
+  border-color: $titleColor;
+  outline-style: none;
+}
+.form__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background: $accentCcolor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: $titleColor;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+.form__send {
+  margin-left: 10px;
+  fill: $titleColor;
+}

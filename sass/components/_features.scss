@@ -1,0 +1,46 @@
+.section {
+  @extend %container;
+  @extend %sections;
+}
+.features__icons {
+  display: flex;
+  justify-content: space-between;
+}
+.features__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: $cardGetGap;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.features__icons__svg {
+  width: 70px;
+  height: 70px;
+}
+.features-list {
+  display: flex;
+  align-items: center;
+  margin-left: calc(#{$cardGetGap} * (-1));
+  margin-top: calc(#{$cardGetGap} * (-1));
+}
+.features-list > .features__item {
+  flex-basis: calc((100% - ((3 * #{$cardGetGap})) / 4));
+  margin-left: $cardGetGap;
+  margin-top: $cardGetGap;
+}
+.features__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features__text {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #757575;
+}

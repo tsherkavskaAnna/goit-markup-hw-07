@@ -1,0 +1,30 @@
+.clients {
+  @extend %container;
+  @extend %sections;
+}
+.clients__item {
+  display: flex;
+}
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid $iconsColor;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border-color $timeDuration $timingFunction,
+    fill $timeDuration $timingFunction;
+}
+.clients__link {
+  fill: $iconsColor;
+  &:hover,
+  &:focus {
+    border-color: $accentCcolor;
+    fill: $accentCcolor;
+  }
+}
+.clients__example:not(:last-child) {
+  margin-right: $cardGetGap;
+}

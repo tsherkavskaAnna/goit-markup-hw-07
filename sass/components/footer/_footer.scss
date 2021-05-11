@@ -1,0 +1,6 @@
+.footer-section {
+  background-color: $heroFooterColor;
+}
+.container {
+  @extend %container;
+}

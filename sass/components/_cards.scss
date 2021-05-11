@@ -1,0 +1,47 @@
+.section-card {
+  @extend %container;
+  padding-bottom: 94px;
+}
+.title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.card-set {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: calc(-1 * #{$cardGetGap});
+  margin-top: calc(-1 * #{$cardGetGap});
+}
+.card-set > .card__list {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - ((2 * #{$cardGetGap})) / 3));
+}
+.card__thumb {
+  margin-right: 0px;
+  max-width: 370px;
+  position: relative;
+}
+.card__list__box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 370px;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+.card__item__title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: $titleColor;
+}

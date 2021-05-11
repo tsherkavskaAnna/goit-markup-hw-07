@@ -1,0 +1,42 @@
+/*Навигация*/
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.nav__link__current {
+  position: relative;
+  color: $accentCcolor;
+}
+.nav__link {
+  display: block;
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-weight: 500;
+  transition: color $timeDuration $timingFunction;
+  &:hover,
+  &:focus {
+    color: $accentCcolor;
+  }
+}
+.nav__link__current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -28px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  opacity: 1;
+  background-color: $accentCcolor;
+}
+.current::after {
+  opacity: 1;
+}
