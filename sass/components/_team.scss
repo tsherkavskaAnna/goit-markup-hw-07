@@ -20,8 +20,8 @@
 }
 
 .team__position {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: $cardGetGap;
+  padding-bottom: $cardGetGap;
 }
 .team__item__name {
   margin-bottom: 10px;
@@ -37,30 +37,25 @@
   line-height: 1.2;
   color: $mainTextColorcolor;
 }
-.social__icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .social__icons__item:not(:last-child) {
   margin-right: 10px;
 }
-
+.social__icons {
+  @extend %icons;
+}
 .social__icons__svg {
-  width: 20px;
-  height: 20px;
+  @include icons-svg;
   fill: $iconsColor;
+  &:hover,
+  &:focus {
+    fill: $titleColor;
+  }
 }
 
 .social__icons__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: $iconsColor;
-  transition: background-color $timeDuration $timingFunction;
+  @include icons-link;
+  background-color: $titleColor;
   &:hover,
   &:focus {
     background-color: $accentCcolor;

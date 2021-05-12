@@ -7,19 +7,25 @@
   text-transform: uppercase;
   color: $titleColor;
 }
-.social__icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.footer__icons {
+  @extend %icons;
 }
-.social__icons__link {
+.footer__icons__item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer__icons__link {
+  @include icons-link;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color $timeDuration $timingFunction;
+  &:hover,
+  &:focus {
+    background-color: $accentCcolor;
+    fill: $titleColor;
+  }
 }
-.social__icons__svg {
+
+.footer__icons__svg {
+  @include icons-svg;
   fill: $titleColor;
-  width: 20px;
-  height: 20px;
 }
 .social {
   margin-right: 93px;

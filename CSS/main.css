@@ -294,6 +294,18 @@ summary {
   padding-top: 94px;
 }
 
+.social__icons, .footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /*Обнуление марджинов и стилей*/
 h1,
 h2,
@@ -903,18 +915,6 @@ textarea.modal__input {
   color: #757575;
 }
 
-.social__icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .social__icons__item:not(:last-child) {
   margin-right: 10px;
 }
@@ -923,6 +923,10 @@ textarea.modal__input {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+}
+
+.social__icons__svg:hover, .social__icons__svg:focus {
+  fill: #fff;
 }
 
 .social__icons__link {
@@ -938,9 +942,9 @@ textarea.modal__input {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: #afb1b8;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #fff;
 }
 
 .social__icons__link:hover, .social__icons__link:focus {
@@ -1065,7 +1069,11 @@ textarea.modal__input {
   color: #fff;
 }
 
-.social__icons {
+.footer__icons__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__icons__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1075,18 +1083,23 @@ textarea.modal__input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.social__icons__link {
-  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social__icons__svg {
+.footer__icons__link:hover, .footer__icons__link:focus {
+  background-color: #2196f3;
   fill: #fff;
+}
+
+.footer__icons__svg {
   width: 20px;
   height: 20px;
+  fill: #fff;
 }
 
 .social {
