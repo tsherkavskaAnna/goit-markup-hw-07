@@ -2,14 +2,9 @@
   @extend %container;
   @extend %sections;
 }
+
 .features__icons {
-  display: flex;
-  justify-content: space-between;
-}
-.features__icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %icons;
   margin-bottom: $cardGetGap;
   width: 270px;
   height: 120px;
