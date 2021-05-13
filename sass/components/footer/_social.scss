@@ -7,7 +7,7 @@
   text-transform: uppercase;
   color: $titleColor;
 }
-.footer__icons {
+.footer__icons__list {
   @extend %icons;
 }
 .footer__icons__item:not(:last-child) {
@@ -23,10 +23,10 @@
   }
 }
 
-.footer__icons__svg {
+.footer__icons {
   @include icons-svg;
   fill: $titleColor;
 }
-.social {
+.footer__social {
   margin-right: 93px;
 }

@@ -2,7 +2,7 @@
   @extend %container;
   @extend %sections;
 }
-.clients__item {
+.clients__list {
   display: flex;
 }
 .clients__link {
@@ -23,6 +23,6 @@
     fill: $accentCcolor;
   }
 }
-.clients__example:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: $cardGetGap;
 }

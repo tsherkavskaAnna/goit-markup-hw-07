@@ -1,13 +1,14 @@
-.button {
+.portfolio__section {
+  padding-top: 94px;
+}
+
+.filters {
   display: flex;
   justify-content: center;
-  padding-left: 0;
-  padding-top: 94px;
-  padding-bottom: 50px;
-  margin: 0;
+  margin-bottom: 50px;
   list-style: none;
 }
-.button__caption {
+.filters__btn {
   padding-top: 6px;
   padding-right: 22px;
   padding-bottom: 6px;
@@ -33,6 +34,6 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
-.button__item:not(:last-child) {
+.filters__item:not(:last-child) {
   margin-right: 8px;
 }

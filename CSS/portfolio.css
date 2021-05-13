@@ -281,7 +281,7 @@ summary {
   border: 0;
 }
 
-.container-header, .container {
+.container-header, .container, .footer__contacts {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -289,7 +289,7 @@ summary {
   margin-right: auto;
 }
 
-.footer__icons {
+.footer__icons__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,7 +385,11 @@ body {
   margin: 0;
 }
 
-.nav__link__current {
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav__link-current {
   position: relative;
   color: #2196f3;
 }
@@ -404,12 +408,12 @@ body {
   color: #2196f3;
 }
 
-.nav__link__current::after {
+.nav__link-current::after {
   content: "";
   display: block;
   position: absolute;
   left: 0;
-  bottom: -28px;
+  bottom: -1px;
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -422,7 +426,7 @@ body {
 }
 
 /*Контакты хедер*/
-.list-contacts {
+.nav__contacts__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,7 +437,7 @@ body {
   margin-left: auto;
 }
 
-.link__contact {
+.nav__contacts__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -452,34 +456,35 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link__contact:hover, .link__contact:focus {
+.nav__contacts__link:hover, .nav__contacts__link:focus {
   color: #2196f3;
 }
 
-.nav__item:not(:last-child) {
+.nav__contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav__icons {
+.nav__contacts__icons {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.button {
+.portfolio__section {
+  padding-top: 94px;
+}
+
+.filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 0;
-  padding-top: 94px;
-  padding-bottom: 50px;
-  margin: 0;
+  margin-bottom: 50px;
   list-style: none;
 }
 
-.button__caption {
+.filters__btn {
   padding-top: 6px;
   padding-right: 22px;
   padding-bottom: 6px;
@@ -504,14 +509,14 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button__caption:hover, .button__caption:focus {
+.filters__btn:hover, .filters__btn:focus {
   background-color: #2196f3;
   color: #fff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button__item:not(:last-child) {
+.filters__item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -521,7 +526,7 @@ body {
   border-top: none;
 }
 
-.portfolio {
+.portfolio__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,7 +538,7 @@ body {
   list-style: none;
 }
 
-.portfolio > .portfolio__item {
+.portfolio__list > .portfolio__item {
   -ms-flex-preferred-size: calc(100% - (3 * (30px)) / 3);
       flex-basis: calc(100% - (3 * (30px)) / 3);
   margin-left: 30px;
@@ -545,14 +550,14 @@ body {
           box-sizing: border-box;
 }
 
-.projects__item {
+.projects__text {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.projects__filters {
+.projects__description {
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.88;
@@ -575,18 +580,18 @@ body {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio__link:hover .overlay__description,
-.portfolio__link:focus .overlay__description {
+.portfolio__link:hover .portfolio__description,
+.portfolio__link:focus .portfolio__description {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.overlay {
+.portfolio__overlay {
   position: relative;
   overflow: hidden;
 }
 
-.overlay__description {
+.portfolio__description {
   position: absolute;
   top: 0;
   left: 0;
@@ -610,7 +615,7 @@ body {
   background-color: #2f303a;
 }
 
-.contacts-section {
+.footer__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -621,7 +626,7 @@ body {
   padding-bottom: 60px;
 }
 
-.address {
+.footer__address {
   margin-right: 70px;
 }
 
@@ -711,13 +716,13 @@ body {
   fill: #fff;
 }
 
-.footer__icons__svg {
+.footer__icons {
   width: 20px;
   height: 20px;
   fill: #fff;
 }
 
-.social {
+.footer__social {
   margin-right: 93px;
 }
 

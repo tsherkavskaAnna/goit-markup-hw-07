@@ -1,9 +1,9 @@
-.team-section {
+.team {
   @extend %container;
   @extend %sections;
   background-color: $teamBackgroudColor;
 }
-.team {
+.team__list {
   display: flex;
   justify-content: center;
   margin-left: calc(#{$cardGetGap} * (-1));
@@ -19,18 +19,18 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__position {
+.team__box {
   padding-top: $cardGetGap;
   padding-bottom: $cardGetGap;
 }
-.team__item__name {
+.team__name {
   margin-bottom: 10px;
   text-align: center;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 500;
 }
-.team__item__position {
+.team__position {
   text-align: center;
   margin-bottom: 16px;
   font-size: 16px;
@@ -38,13 +38,13 @@
   color: $mainTextColorcolor;
 }
 
-.social__icons__item:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: 10px;
 }
-.social__icons {
+.social__icons__list {
   @extend %icons;
 }
-.social__icons__svg {
+.social__icons {
   @include icons-svg;
   fill: $iconsColor;
   &:hover,
@@ -53,7 +53,7 @@
   }
 }
 
-.social__icons__link {
+.social__link {
   @include icons-link;
   background-color: $titleColor;
   &:hover,

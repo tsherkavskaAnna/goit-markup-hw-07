@@ -1,11 +1,11 @@
 /*Контакты хедер*/
-.list-contacts {
+.nav__contacts__list {
   display: flex;
   justify-content: center;
   padding-left: 0;
   margin-left: auto;
 }
-.link__contact {
+.nav__contacts__link {
   display: flex;
   justify-content: center;
   padding-top: 24px;
@@ -22,10 +22,10 @@
     color: $accentCcolor;
   }
 }
-.nav__item:not(:last-child) {
+.nav__contacts__item:not(:last-child) {
   margin-right: 50px;
 }
-.nav__icons {
+.nav__contacts__icons {
   margin-right: 10px;
   fill: currentColor;
 }
